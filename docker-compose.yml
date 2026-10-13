@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: foro-uni-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: foro_uni
+      POSTGRES_USER: foro
+      POSTGRES_PASSWORD: cambia-esta-clave
+    ports:
+      - "5432:5432"
+    volumes:
+      - foro_uni_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U foro -d foro_uni"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  foro_uni_pgdata:

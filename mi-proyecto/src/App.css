@@ -1,0 +1,34 @@
+:root {
+  --color-primary: #003485;
+  --color-primary-dark: #0B1840;
+  --color-primary-light: #7292F2;
+  --color-secondary: #3F598C;
+  --color-background: #ABD2FB;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Poppins-Regular", sans-serif;
+  font-family: "Poppins-Bold", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat-Bold", sans-serif;
+}
